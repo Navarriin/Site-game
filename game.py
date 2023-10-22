@@ -12,7 +12,7 @@ def index():
         return render_template('index.html')
     elif request.method == 'POST':
         # gera um numero aleatorio e o armazena
-        numero = randint(1,20)
+        numero = randint(1,10)
         # em caso de erro, chama a funcao (error)
         try:
             palpite = int(request.form.get("name"))
